@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d0d0d0; /* Hellgrau */
+            color: #333;
+        }
+        header {
+            background-color: #add8e6; /* Hellblau */
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        header::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: #87CEEB; /* Kräftigeres Hellblau */
+            transform: skewX(-20deg);
+            z-index: 0;
+        }
+        header h1 {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            position: relative;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            position: relative;
+            z-index: 1;
+        }
+        nav::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: #444;
+            transform: skewX(-20deg);
+            z-index: 0;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        section {
+            flex: 1 1 100%;
+            padding: 20px;
+            margin: 10px;
+            background-color: #f8f8f8;
+            position: relative;
+            overflow: hidden;
+        }
+        section::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 200%;
+            height: 100%;
+            background-color: #e0e0e0;
+            transform: skewY(-10deg);
+            z-index: 0;
+        }
+        section h2, section p {
+            position: relative;
+            z-index: 1;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+        }
+        footer::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            background-color: #444;
+            transform: skewX(-20deg);
+            z-index: 0;
+        }
+        footer p {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Test</h1>
+</header>
+
+<nav>
+    <a href="#about">Test</a>
+    <a href="#projects">Test</a>
+    <a href="#contact">Test</a>
+</nav>
+
+<div class="container">
+    <section id="about">
+        <h2>Test</h2>
+        <p>Test</p>
+    </section>
+
+    <section id="projects">
+        <h2>Test</h2>
+        <p>Test</p>
+    </section>
+
+    <section id="contact">
+        <h2>Test</h2>
+        <p>Test</p>
+        <p>Email: <a href="mailto:test@example.com">test@example.com</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Test. Alle Rechte vorbehalten.</p>
+</footer>
+
+</body>
+</html>
